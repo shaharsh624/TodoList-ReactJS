@@ -1,4 +1,4 @@
-import "../App.css";
+import "../index.css";
 import React, { useState } from "react";
 
 export const AddTodo = ({ addTodo }) => {
@@ -16,16 +16,11 @@ export const AddTodo = ({ addTodo }) => {
     }
   };
 
-  let myStyle= {
-    "padding-left": "100px",
-    "padding-right": "100px",
-  }
-
   return (
-    <div className="container my-3" style={myStyle}>
+    <div className="addContainer">
       <h3>Add a Todo</h3>
-      <form onSubmit={submit}>
-        <div className="mb-3">
+      <form onSubmit={submit} className="">
+        <div className= "my-3">
           <label htmlFor="title" className="form-label">
             Todo Title
           </label>
@@ -36,12 +31,10 @@ export const AddTodo = ({ addTodo }) => {
               setTitle(e.target.value);
             }}
             className="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
           />
         </div>
 
-        <div className="mb-3">
+        <div className=" mb-3">
           <label htmlFor="desc" className="form-label">
             Todo Description
           </label>
@@ -51,7 +44,7 @@ export const AddTodo = ({ addTodo }) => {
             onChange={(e) => {
               setDesc(e.target.value);
             }}
-            className="form-control input"
+            className="form-control"
             id="desc"
           />
         </div>

@@ -1,10 +1,10 @@
-import "../App.css";
+import "../index.css";
 import React from "react";
 
 export const TodoItem = ({ todo, onDelete }) => {
   return (
     <>
-    <div className="my-3">
+    <div className="">
       <h4>{todo.title}</h4>
       <p>{todo.desc}</p>
       <button

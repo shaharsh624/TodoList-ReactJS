@@ -1,17 +1,14 @@
-import "../App.css";
+import "../index.css";
 import React from "react";
 import { TodoItem } from "./TodoItem";
 
 export const Todos = (props) => {
   let myStyle = {
-    minHeight: "70vh",
-    margin: "50px, auto",
-    "padding-left": "100px",
-    "padding-right": "100px"
+    minHeight: "40vh",
   };
   return (
-    <div className="container" style={myStyle}>
-      <h3 className="my-3" >Todos List</h3>
+    <div className="showContainer" style={myStyle}>
+      <h3 className="" >Todos List</h3>
       {props.todos.length === 0
         ? "Congrats! Nothing to Do"
         : props.todos.map((todo) => {
