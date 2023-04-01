@@ -20,23 +20,23 @@ export const AddTodo = ({ addTodo }) => {
     <div className="addContainer">
       <h3>Add a Todo</h3>
       <form onSubmit={submit} className="">
-        <div className= "my-3">
+        <div className= "my-3 box2">
           <label htmlFor="title" className="form-label">
-            Todo Title
+            Title
           </label>
           <input
-            type="text"
+            type="title"
             value={title}
             onChange={(e) => {
               setTitle(e.target.value);
             }}
-            className="form-control"
+            className="form-control"  
           />
         </div>
 
-        <div className=" mb-3">
+        <div className=" mb-3 box2">
           <label htmlFor="desc" className="form-label">
-            Todo Description
+            Description
           </label>
           <input
             type="desc"
@@ -49,7 +49,7 @@ export const AddTodo = ({ addTodo }) => {
           />
         </div>
 
-        <button type="submit" className="btn btn-success btn-sm">
+        <button type="submit" className="btn btn-success">
           Add
         </button>
       </form>

@@ -6,25 +6,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #212529;
+  background: radial-gradient(circle, rgba(149,187,232,1) 0%, rgba(238,174,202,1) 100%);
 }
 
 .container {
   background-color: #ffffff;
-  /* padding: 20px 50px; */
 }
 
 
 .addContainer {
-  background-color: #e0fbfc;
+  background-color: rgb(222, 239, 255);
   padding: 1.32% 3.31%;
-  margin: 3% 20%;
+  margin: 3% 10%;
+  border: none;
+  border-radius: 5px;
 }
 
 .showContainer {
-  background-color: #e0fbfc;
+  background-color: rgb(222, 239, 255);
   padding: 1.32% 3.31%;
-  margin: 3% 20%;
+  margin: 3% 10%;
 }
 
 label{
@@ -32,24 +33,78 @@ label{
   border: none;
   font-size: 20px;
   font-weight: 600;
+  color: #000;
 }
 
-input[type="text"] {
-  height: 40px;
-  top: 10px;
-  border: none;
-  background: #fff;
+input[type="title"] {
+  height: 2.64%;
+  background: #f7faff;
   font-size: 20px;
   font-weight: 200;
-  width: 400px;
+  width: 50%;
 }
 
 input[type="desc"] {
-  height: 40px;
-  top: 10px;
-  border: none;
-  background: #fff;
+  height: 2.64%;
+  background: #f7faff;
   font-size: 20px;
   font-weight: 200;
-  width: 800px;
+  width: 100%;
 }
+
+.todoItem {
+  margin: inherit ;
+}
+
+
+.box {
+  margin: 20px 10px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.box1 {
+  margin: 20px 10px;
+  padding: 20px;
+  display:grid;
+  grid-template-columns: 33% 34% 33%;
+  gap: 2px;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(149,187,232,1) 100%);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.box2 {
+  margin: 20px 10px;
+  padding: 20px;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(149,187,232,1) 100%);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success {
+  margin: 5px 10px 0px;
+  width: 9.5%;
+  font-size: 18px;
+  font-weight: 600;
+  background: radial-gradient(circle, rgba(149,187,232,1) 0%, rgba(238,174,202,1) 100%);
+  color: #000;
+  border: none;
+}
+
+.aboutHeading {
+  text-align: center;
+  margin: 2% 5%;
+  padding: 50px 0 5px;
+}
+
+.aboutPara {
+  text-align: justify;
+  margin: 2% 5%;
+  padding: 5px 10% 26%;
+  font-size: large;
+  text-justify: distribute-all-lines;
+}
+

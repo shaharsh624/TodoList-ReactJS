@@ -4,7 +4,7 @@ import React from "react";
 export const TodoItem = ({ todo, onDelete }) => {
   return (
     <>
-    <div className="">
+    <div className="todoItem box">
       <h4>{todo.title}</h4>
       <p>{todo.desc}</p>
       <button
@@ -13,10 +13,9 @@ export const TodoItem = ({ todo, onDelete }) => {
           onDelete(todo);
         }}
       >
-        Delete
+        Remove
       </button>
     </div>
-    <hr/>
     </>
   );
 };

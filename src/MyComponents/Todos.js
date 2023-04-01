@@ -9,6 +9,7 @@ export const Todos = (props) => {
   return (
     <div className="showContainer" style={myStyle}>
       <h3 className="" >Todos List</h3>
+      <div className="box1">
       {props.todos.length === 0
         ? "Congrats! Nothing to Do"
         : props.todos.map((todo) => {
@@ -20,6 +21,7 @@ export const Todos = (props) => {
                 />
             );
           })}
+          </div>
     </div>
   );
 };
